@@ -1,0 +1,8 @@
+<template>
+    <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small"
+    value={opportunityName}>
+    </lightning-input>
+    <template for:each={opportunityList} for:item="opportunityObj">
+     <option key={opportunityObj.Id}>{opportunityObj.Name}</option>
+    </template>
+</template>

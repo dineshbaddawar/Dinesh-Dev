@@ -1,0 +1,27 @@
+<template>
+<lightning-card title="Simple Interest Calculator" icon-name="custom:custom2">
+<lightning-layout multiple-rows>
+
+<lightning-layout-item>
+<lightning-input type="Number" label="Enter Principle" onchange={principleHandler}></lightning-input>
+</lightning-layout-item>
+
+<lightning-layout-item>
+<lightning-input type="Number" label="Enter No of Years" onchange={yearHandler}></lightning-input>
+</lightning-layout-item>
+
+<lightning-layout-item>
+<lightning-input type="Number" label="Enter Rate of Interest" onchange={rateHandler}></lightning-input>
+</lightning-layout-item>
+
+<lightning-layout-item>
+<lightning-button label="Calculate Interest" icon-position="center" onclick={calculateHandler}></lightning-button>
+</lightning-layout-item>
+
+<lightning-layout-item>
+<lightning-formatted-text value={currentOutput}></lightning-formatted-text>
+</lightning-layout-item>
+
+</lightning-layout>
+</lightning-card>    
+</template>

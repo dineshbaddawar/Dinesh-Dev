@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="OppList Using Wire">
+        <template for:each={data} for:item='opp'>
+            <p key={opp.id}>{opp.Name}, {opp.Amount}, {opp.StageName}</p>
+        </template>
+    </lightning-card>
+</template>

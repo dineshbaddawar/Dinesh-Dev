@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Interest Calculator" icon-name="standar:contact">
+    <lightning-layout multiple-rows>
+
+      <lightning-layout-item size="10" padding="around-small">
+        <lightning-input type="number" label="Enter Principle" onchange={principleHandler}></lightning-input>
+      </lightning-layout-item>
+
+      <lightning-layout-item size="10" padding="around-small">
+        <lightning-input type="number" label="Enter Years" onchange={yearHandler}></lightning-input>
+      </lightning-layout-item>
+
+      <lightning-layout-item size="10" padding="around-small">
+        <lightning-input type="number" label="Enter Interest" onchange={interestHandler}></lightning-input>
+      </lightning-layout-item>
+
+      <lightning-layout-item size="10" padding="around-small">
+          <lightning-button label="Interest" icon-position="bottom" onclick={calculateHandler}></lightning-button>
+      </lightning-layout-item>
+
+      <lightning-layout-item size="10" padding="around-small">
+          <lightning-formatted-text value={currentOutput}></lightning-formatted-text>
+    </lightning-layout-item>
+
+    </lightning-layout>
+    </lightning-card>
+</template>

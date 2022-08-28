@@ -1,0 +1,31 @@
+<template>
+    
+    <lightning-card title="Simple Subtraction & Addition Calculator" icon-name="custom:custom12">
+
+      <lightning-layout multiple-rows>
+
+       <lightning-layout-item size="12" padding="around-medium">
+           <lightning-input label="Enter Number" onchange={oneHandler}></lightning-input>
+       </lightning-layout-item>
+
+       <lightning-layout-item size="12" padding="around-medium">
+           <lightning-input label="Enter Number" onchange={twoHandler}></lightning-input>
+       </lightning-layout-item>
+
+       <lightning-layout-item size="12" padding="around-medium">
+           <lightning-button label="Subtract" onclick={saveHandler}></lightning-button>
+       </lightning-layout-item>
+
+       <lightning-layout-item size="12" padding="around-small">
+           <lightning-button label="Addition" onclick={addHandler}></lightning-button>
+       </lightning-layout-item>
+
+       <lightning-layout-item size="12" padding="around-medium">
+           <lightning-formatted-text value={output}></lightning-formatted-text>
+       </lightning-layout-item>
+
+      </lightning-layout>
+
+    </lightning-card>
+
+</template>

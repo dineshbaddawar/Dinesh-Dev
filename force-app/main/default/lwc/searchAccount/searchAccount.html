@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+        <lightning-input type="search" onchange={handleChange} value={accountName}></lightning-input>
+        <template for:each={accountList} for:item="accountA">
+            <option key={accountA.id}>{accountA.Name}</option>
+        </template>
+    </lightning-card>
+</template>
