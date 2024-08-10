@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Math Calculator" icon-name="custom:csutom11">
+    <lightning-layout multiple-rows>
+
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-input type="number" label="Enter No" onchange={firstHandler}></lightning-input>
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-input type="number" label="Enter No" onchange={secondHandler}></lightning-input>
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-button label="Addition" icon-position="left" onclick={addHandler}></lightning-button>     
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-button label="Subtract" icon-position="right" onclick={subHandler}></lightning-button>     
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-button label="Divide" icon-position="top" onclick={divHandler}></lightning-button>     
+        </lightning-layout-item>
+
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-button label="Multiply" icon-position="bottom" onclick={mulHandler}></lightning-button>     
+        </lightning-layout-item>
+       <br/>
+        <lightning-layout-item size="12" padding="small"> 
+        <lightning-formatted-text value={currentOutput}></lightning-formatted-text>
+        </lightning-layout-item>
+
+    </lightning-layout>
+    </lightning-card>
+</template>

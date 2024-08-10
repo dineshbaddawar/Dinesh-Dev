@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="LWC Combobox Example">
+        <lightning-combobox label="Accounts"
+                            value={value}
+                            placeholder= "Select Accounts"
+                            options={options}
+                            onchange={handleChanged}>
+        </lightning-combobox>
+
+        <p>Selected Account Record ID : <b>{value}</b></p>
+
+    </lightning-card>
+</template>

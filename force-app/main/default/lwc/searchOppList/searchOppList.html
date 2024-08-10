@@ -1,0 +1,8 @@
+<template>
+<lightning-card>
+  <lightning-input type="search" onchange={handleChange} value={opportunityName}></lightning-input>
+  <template for:each={oppList} for:item="oppObj">
+     <option key={oppObj.id}>{oppObj.Name}</option>
+  </template>
+</lightning-card>    
+</template>

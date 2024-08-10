@@ -1,0 +1,15 @@
+<template>
+<lightning-card title="Mobile Types" icon-name="custom:custom2">
+
+    <div class="slds-m-around-medium">
+<p>Mobile Brand:<b> {brand}</b></p>
+<p>Mobile Country: <b>{country}</b></p>
+<p>Mobile Price: <b>{price}</b></p>
+    </div>
+</br>
+    <lightning-input label="Brand" value={brand} onchange={brandHandler}></lightning-input>
+    <lightning-input label="Country" value={country} onchange={countryHandler}></lightning-input>
+    <lightning-input label="Price" value={price} onchange={priceHandler}></lightning-input>
+
+</lightning-card>
+</template>

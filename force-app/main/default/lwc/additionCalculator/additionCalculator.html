@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Addition " icon-name="standard:opportunity">
+    <lightning-layout multiple-rows>
+
+    <lightning-layout-item size="11" padding="around-medium">
+     <lightning-input type="number" label="Enter First No" onchange={firstChangeHandler}></lightning-input>
+     </lightning-layout-item>
+
+    <lightning-layout-item size="11" padding="around-medium">
+    <lightning-input type="number" label="Enter Second No" onchange={secondChangeHandler}></lightning-input>
+    </lightning-layout-item>
+   
+    <lightning-layout-item size="11" padding="around-medium">
+        <lightning-button label="Addition" icon-position="top" onclick={additionHandler}></lightning-button>
+    </lightning-layout-item>
+
+    
+    <lightning-layout-item size="11" padding="around-medium">
+        <lightning-formatted-text value={currentOutput}></lightning-formatted-text>
+    </lightning-layout-item>
+    
+
+    </lightning-layout>
+    </lightning-card>
+</template>

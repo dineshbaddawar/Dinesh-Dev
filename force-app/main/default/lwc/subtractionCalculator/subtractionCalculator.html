@@ -1,0 +1,23 @@
+<template>
+    <lightning-card>
+     <lightning-layout multiple-rows>
+
+         <lightning-layout-item size="11" padding="around-small">
+          <lightning-input type="number" label="Enter First No" onchange={firstHandler}></lightning-input>
+         </lightning-layout-item>
+
+         <lightning-layout-item size="11" padding="around-small">
+        <lightning-input type="number" label="Enter Second No" onchange={secondHandler}></lightning-input>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="11" padding="around-small">
+            <lightning-button label="Subtraction" icon-position="top" onclick={SubHandler}></lightning-button>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="11" padding="around-small">
+            <lightning-formatted-text value={currntOutput}></lightning-formatted-text>
+        </lightning-layout-item>
+
+     </lightning-layout>   
+    </lightning-card>
+</template>

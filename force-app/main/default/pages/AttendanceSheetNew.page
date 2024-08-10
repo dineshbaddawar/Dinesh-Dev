@@ -1,0 +1,1701 @@
+<apex:page renderAs="pdf"   showHeader="false" sidebar="false"    applyHtmlTag="false" applyBodyTag="false" >
+    <head>
+        
+        <style>
+            
+            @page {
+            size: 23.4in 33.1in ;
+            margin-top: 0cm;
+            margin-left: 0cm;
+            margin-right: 0cm;
+            }
+            .body { 
+            font-family: Arial, sans-serif;
+            
+            }
+            .table {
+            width: 100%;
+            margin: 5px 0;
+            }
+            .table, th, td {
+            border: 1px solid black;
+            }
+            .th, td {
+            padding: 5px;
+            text-align: center;
+            }
+            .th {
+            background-color: #f2f2f2;
+            }
+</style>
+        
+    </head>
+    <body>
+          <table id="table2" style="width: 100%;border: 1px solid black;text-align:center;  font-size:10px;border-collapse: collapse !important;font-size:15px;">
+              <tr>
+                  <th rowspan="2" style="text-align:left;font-size:18px;"><b>INTERPLEX Electronics India Pvt Ltd.,</b></th>
+                  <th rowspan="2" style="text-align:center"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></th>
+                  <th rowspan="2" style="text-align:center"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></th>
+                  <th style="width:20%;font-size:25px;">Interplex</th>
+                  <th rowspan="2" style="text-align:center;font-size:18px;"><b><u>AUTONOMOUS MAINTENANCE (CLIT/DAILY/POKA YOKE) CHECK SHEET</u></b></th>
+              </tr>
+        </table>
+         <table id="table2" style="width: 100%;border: 1px solid black;text-align:center;  font-size:10px;border-collapse: collapse !important;font-size:15px;">
+              <tr>
+                  <th rowspan="2" style="text-align:left;font-size:18px;"><b>Machine No : PRESS - 06</b></th>
+                  <th rowspan="2" style="text-align:center"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></th>
+                  <th rowspan="2" style="text-align:center"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></th>
+                  <th style="width:20%;font-size:18px;">MONTH OF : JUNE</th>
+                   <th style="width:20%;font-size:18px;">YEAR : 2024</th>
+              </tr>
+        </table>
+          <table id="table2" style="width: 100%;text-align:center;  font-size:10px;border-collapse: collapse !important;font-size:15px;">
+              <tr>
+                  <td>&nbsp;</td>
+              </tr>
+        </table>
+        <table id="table2" style="width: 100%;border: 1px solid black;text-align:center;  font-size:10px;border-collapse: collapse !important;font-size:15px;">
+            <thead>
+                <tr>
+                    <th rowspan="4">SI.No</th>
+                    <th rowspan="4">ITEM</th>
+                    <th rowspan="4">CLIT</th>
+                    <th rowspan="4">SHIFT</th>
+                    <!-- Generating columns for days 1 to 30 -->
+                    <!-- HTML only: manually add day columns -->
+                    <th colspan="31">Attendance by Day</th>
+                </tr>
+                <tr>
+                    <!-- Day Headers -->
+                    <th class="day-column">Day 1</th>
+                    <th class="day-column">Day 2</th>
+                    <th class="day-column">Day 3</th>
+                    <th class="day-column">Day 4</th>
+                    <th class="day-column">Day 5</th>
+                    <th class="day-column">Day 6</th>
+                    <th class="day-column">Day 7</th>
+                    <th class="day-column">Day 8</th>
+                    <th class="day-column">Day 9</th>
+                    <th class="day-column">Day 10</th>
+                    <th class="day-column">Day 11</th>
+                    <th class="day-column">Day 12</th>
+                    <th class="day-column">Day 13</th>
+                    <th class="day-column">Day 14</th>
+                    <th class="day-column">Day 15</th>
+                    <th class="day-column">Day 16</th>
+                    <th class="day-column">Day 17</th>
+                    <th class="day-column">Day 18</th>
+                    <th class="day-column">Day 19</th>
+                    <th class="day-column">Day 20</th>
+                    <th class="day-column">Day 21</th>
+                    <th class="day-column">Day 22</th>
+                    <th class="day-column">Day 23</th>
+                    <th class="day-column">Day 24</th>
+                    <th class="day-column">Day 25</th>
+                    <th class="day-column">Day 26</th>
+                    <th class="day-column">Day 27</th>
+                    <th class="day-column">Day 28</th>
+                    <th class="day-column">Day 29</th>
+                    <th class="day-column">Day 30</th>
+                    <th class="day-column">Day 31</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;"  colspan="1">
+                        <b style="font-size:14px;"> A </b>
+                    </td>
+                    <td style="border: 1px solid black;border-right:hidden;text-align:left !important;"  >
+                        <span style=""><b>BEFORE STARTING THE MOTOR</b> </span>  
+                    </td>
+                    <td style=" " colspan="33">
+                    </td>
+                </tr>
+                
+                <!-- Item1 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>1</h3> </b> <apex:image url="{!$Resource.HandPNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Check the back side door limit switch working</td>
+                    <td class="student-info" rowspan="3">Inspection</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item1 End-->
+                
+                <!-- Item2 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>2</h3> </b> <apex:image url="{!$Resource.EyePNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Check hydrolic pressure &amp; lubrication Oil level from the indicator</td>
+                    <td class="student-info" rowspan="3">Lubrication</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item2 End-->
+                
+                <!-- Item3 Start-->
+                <!-- Item3.1 Start-->
+                <tr>
+                    <td rowspan="6"> <span> <b><h3>3</h3> </b> <apex:image url="{!$Resource.EyePNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="6"  style="word-wrap: break-word !important;">Check for cutting oil level<br/>(Magnus oil/ Non ferrous)</td>
+                    <td class="student-info" rowspan="3">Medium</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item3.1 End-->
+                
+                <!-- Item3.2 Start-->
+                <tr>
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">High</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item3.2 End-->
+                
+                <!-- Item3 End-->
+                
+                <!-- Item4 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>4</h3> </b> <apex:image url="{!$Resource.EyePNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Check for Air pressure 4-6 bar, Pressure drop indicator</td>
+                    <td class="student-info" rowspan="3">Value</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item4 End-->
+                
+                <!-- Item5 Start-->
+                <tr> 
+                    <td rowspan="3"> <span> <b><h3>5</h3> </b> <apex:image url="{!$Resource.HandPNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Drain the air receiver tank</td>
+                    <td class="student-info" rowspan="3">Lubrication</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item5 End-->
+                
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;"  colspan="1">
+                        <b style="font-size:14px;"> B </b>
+                    </td>
+                    <td style="border: 1px solid black;border-right:hidden;text-align:left !important;"  >
+                        <span style=""><b>AFTER STARTING THE MOTOR</b> </span>  
+                    </td>
+                    <td style=" " colspan="33">
+                    </td>
+                </tr>
+                
+                <!-- Item6 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>6</h3> </b> <apex:image url="{!$Resource.HandPNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Ensure emergency stop</td>
+                    <td class="student-info" rowspan="3">Inspection</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item6 End-->
+                
+                <!-- Item7 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>7</h3> </b> <apex:image url="{!$Resource.HandPNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Clean the machine,bed and ram before</td>
+                    <td class="student-info" rowspan="3">Cleaning</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item7 End-->
+                
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;"  colspan="1">
+                        <b style="font-size:14px;"> C </b>
+                    </td>
+                    <td style="border: 1px solid black;border-right:hidden;text-align:left !important;"  >
+                        <span style=""><b>POKA YOKE check point</b> </span>  
+                    </td>
+                    <td style=" " colspan="33">
+                    </td>
+                </tr>
+                
+                <!-- Item8 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>8</h3> </b> <apex:image url="{!$Resource.HandPNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Check the safety light curtain sensor<br/> (validation by hand method)</td>
+                    <td class="student-info" rowspan="3">Inspection</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item8 End-->
+                
+                <!-- Item9 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>9</h3> </b> <apex:image url="{!$Resource.HandPNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Two hand operation (validation - press <br/> one push button should not work)</td>
+                    <td class="student-info" rowspan="3">Inspection</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item9 End-->
+                
+                <!-- Item10 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>10</h3> </b> <apex:image url="{!$Resource.EyePNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">ANDON Lamp (Visual control system -<br/> Red, Yellow &amp; Green)</td>
+                    <td class="student-info" rowspan="3">Inspection</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Item10 End-->
+                
+                <!-- Item11 Start-->
+                <tr>
+                    <td rowspan="3"> <span> <b><h3>11</h3> </b> <apex:image url="{!$Resource.EyePNG}" width="30" height="30" /> </span> </td> 
+                    <td class="student-info" rowspan="3"  style="word-wrap: break-word !important;">Ensure Top Dead Centre at 360/0 degree<br/> angle and Bottom Dead Centre at 180 <br/>degree angle</td>
+                    <td class="student-info" rowspan="3">Inspection</td>
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <!-- Operator Sign-->
+                <tr>
+                    <td rowspan="3" colSpan="3"> <span> <b><h3>Operator Sign :</h3> </b>  </span> </td> 
+                    
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                
+                <!-- Supervisor Sign-->
+                <tr>
+                    <td rowspan="3" colSpan="3"> <span> <b><h3>Supervisor Sign:</h3> </b>  </span> </td> 
+                    
+                    <td>I</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                    <td>✗</td>
+                    <td><apex:image url="{!$Resource.RightSymbol}" width="10" height="10" /></td>
+                </tr>
+                
+                
+                <!-- Note -->
+                <tr>
+                    <td rowspan="3" colSpan="2"> <span> <b><h5>Note: if any abnormality, oil leakage, Air leakage,loose wining, bolt And Nut Losse inform to maintenance </h5> </b> </span> </td> 
+                    
+                    <td style=" "> 
+                    </td>
+                    <td style=" " colspan="33">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table2" style="width: 100%;border: 1px solid black;text-align:center;  font-size:10px;border-collapse: collapse !important;font-size:15px;">
+            
+            
+            <tr>
+                <td>
+                    
+                    <table style="width:100%; border-collapse: collapse;">
+                       
+                        <tr style="border-left:hidden !important;">
+                            <th style="border: 1px solid black;" rowspan="2">Note</th>
+                            <td style="border: 1px solid black;">Yes</td>
+                             <td style="border: 1px solid black;"><apex:image url="{!$Resource.RightSymbol}" width="15" height="10" /></td>
+                        </tr>
+                        <tr style="border-left:hidden !important;">
+                            <td style="border: 1px solid black;">No</td>
+                            <td style="border: 1px solid black;"><apex:image url="{!$Resource.UncheckPNG}" width="15" height="10" /></td>  
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table style=" border-collapse: collapse;">
+                        
+                        <tr>
+                            <td style="border: 1px solid black; padding: 2px;border-right:none;">C</td>
+                            <td style="border: 1px solid black; padding: 2px;">Cleaning</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 10px;">L</td>
+                            <td style="border: 1px solid black; padding: 10px;">Lubrication</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 10px;">I</td>
+                            <td style="border: 1px solid black; padding: 10px;">Inspection</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding: 10px;">T</td>
+                            <td style="border: 1px solid black; padding: 10px;">Tightening</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+        </table>
+        
+    </body>
+</apex:page>

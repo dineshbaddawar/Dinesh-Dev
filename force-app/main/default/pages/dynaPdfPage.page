@@ -1,0 +1,225 @@
+<apex:page standardStylesheets="false" id="pge" renderAs="pdf">
+    
+    
+    <c:dynapdfcomponent type="header" > 
+        <div>
+            <div style="display: inline-block; width: 100%; margin: 1rem; padding: 2rem 2rem; padding-top: 10px; font-family: Calibri;font-size: 11px;">
+                <div style="display: inline-block; padding: 2rem 2rem; vertical-align: middle; float: left; width: 70%;">
+                    <apex:image url="{!$Resource.Logo}" width="190" height="60" /><br/>
+                </div>
+                <div style="display: inline-block; padding: 2rem 2rem; vertical-align: middle; float: left; width: 30%; font-family: Calibri;font-size: 11px;line-height: 1.5;text-align:right">
+                    <span>
+                        Analytical Solutions<br />
+                        (A div. of Indtech Instruments Pvt. ltd)<br />
+                        B-22 MIDC TTC. Ind. Area, Chinchavali<br />
+                        Navi Mumbai – 400708<br />
+                    </span>
+                </div>
+            </div>
+            <hr style="border-top: 1px solid #D3D3D3;" />
+        </div>
+    </c:dynapdfcomponent>
+    <c:dynapdfcomponent type="footer">
+        <div>Page <span class="pagenumber"/> of <span class="pagecount"/></div>
+        
+    </c:dynapdfcomponent>
+    
+    <div class="content">
+        
+        <!----------------Your content goes here--------->
+            <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Attendance Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .student-info {
+            text-align: left;
+        }
+        .day-column {
+            
+        }
+        .shift-row {
+            height: 33px; /* Adjust as needed to distribute space equally */
+        }
+    </style>
+</head>
+<body>
+    <h2>Attendance Sheet</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="4">Student Name</th>
+                <th rowspan="4">Department</th>
+                <th rowspan="4">SHIFT</th>
+                <!-- Generating columns for days 1 to 30 -->
+                <!-- HTML only: manually add day columns -->
+                <th colspan="30">Attendance by Day</th>
+            </tr>
+            <tr>
+                <!-- Day Headers -->
+                <th class="day-column">Day 1</th>
+                <th class="day-column">Day 2</th>
+                <th class="day-column">Day 3</th>
+                <th class="day-column">Day 4</th>
+                <th class="day-column">Day 5</th>
+                <th class="day-column">Day 6</th>
+                <th class="day-column">Day 7</th>
+                <th class="day-column">Day 8</th>
+                <th class="day-column">Day 9</th>
+                <th class="day-column">Day 10</th>
+                <th class="day-column">Day 11</th>
+                <th class="day-column">Day 12</th>
+                <th class="day-column">Day 13</th>
+                <th class="day-column">Day 14</th>
+                <th class="day-column">Day 15</th>
+                <th class="day-column">Day 16</th>
+                <th class="day-column">Day 17</th>
+                <th class="day-column">Day 18</th>
+                <th class="day-column">Day 19</th>
+                <th class="day-column">Day 20</th>
+                <th class="day-column">Day 21</th>
+                <th class="day-column">Day 22</th>
+                <th class="day-column">Day 23</th>
+                <th class="day-column">Day 24</th>
+                <th class="day-column">Day 25</th>
+                <th class="day-column">Day 26</th>
+                <th class="day-column">Day 27</th>
+                <th class="day-column">Day 28</th>
+                <th class="day-column">Day 29</th>
+                <th class="day-column">Day 30</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="student-info" rowspan="3">John Doe</td>
+                <td class="student-info" rowspan="3">Computer       Science</td>
+                <td>I</td>
+                <!-- Attendance status for each day -->
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+               
+            </tr>
+            <tr>
+                <td>III</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✗</td>
+                <td>✓</td>
+                <td>✓</td>
+                
+            </tr>
+             </tbody>
+                </table>
+                </body>
+        
+        
+    </div>
+    
+    
+    
+    
+</apex:page>
