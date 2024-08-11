@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-   <c:excelReader/>
+   <c:colorPickerContainer/>
 </aura:application>

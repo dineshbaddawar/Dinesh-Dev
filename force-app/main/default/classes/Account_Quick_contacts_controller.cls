@@ -14,6 +14,6 @@ public class Account_Quick_contacts_controller {
         singleCon.AccountId = acc.Id;
         insert singleCon;
         contactList.add(singleCon);        
-        singleCon = new Contact();
+        singleCon = new Contact(); 
     }
 }

@@ -14,7 +14,6 @@ export default class MiniCustomLookup extends LightningElement {
         selectdId: "",
         selectedName: ""
     };
-
     displayOptions = false;
 
     @wire(searchRecords, 
@@ -25,11 +24,10 @@ export default class MiniCustomLookup extends LightningElement {
 
     get isRecordSelected() {
         debugger;
-        console.log("isRecordSelected",this.selectedRecord.selectdId === ""? false : true);
+        console.log("isRecordSelected ==== >",this.selectedRecord.selectdId === ""? false : true);
         return this.selectedRecord.selectdId === "" ? false : true;
     }
     
-
     changeHandler(event) {
         debugger;
         window.clearTimeout(this.delayTimeout);
@@ -44,8 +42,7 @@ export default class MiniCustomLookup extends LightningElement {
     clickHandler(event) {
         debugger;
         let selectedId = event.currentTarget.dataset.item;
-        console.log("SelectedId", selectedId);
-
+        console.log("SelectedId == >", selectedId);
         let outputRecord = this.outputs.data.find((currItem) => 
             currItem.Id == selectedId
     );
@@ -53,10 +50,8 @@ export default class MiniCustomLookup extends LightningElement {
         this.selectedRecord = {
             selectdId: outputRecord.Id,
             selectedName: outputRecord.Name
-        
         };
-        this.displayOptions = false;
-        
+        this.displayOptions = false;   
     }
 
     removeSelectHandler(event) {
@@ -65,9 +60,7 @@ export default class MiniCustomLookup extends LightningElement {
             selectdId: "",
             selectedName: ""
         };
-        this.displayOptions = false;
-        
+        this.displayOptions = false;   
     }
-
 
 }

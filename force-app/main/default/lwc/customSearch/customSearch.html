@@ -1,27 +1,17 @@
 <template>
     <div class="slds-m-around_medium">
-      
+      <h2> <b>Custom Search Using Apex</b> </h2> <br/>
       <div class="slds-m-bottom_small">
-          <lightning-input type="text"
-             value={searchValue}
-             label="Contact Name"
-             onchange={searchKeyword}
-             ></lightning-input>
-       </div>
+          <lightning-input type="text" value={searchValue} label=" Search Contact" placeholder="Search here.." onchange={searchKeyword} ></lightning-input>
+       </div>  
        
-       <lightning-button label="Search"
-          onclick={handleSearchKeyword}
-          variant="brand"></lightning-button>
-          
-      
+       <lightning-button label="Search"  onclick={handleSearchKeyword} variant="brand"></lightning-button>
        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-top_small">
           <thead>
              <tr class="slds-line-height_reset">
+              
                 <th class="" scope="col">
-                   <div class="slds-truncate" title="First Name">First Name</div>
-                </th>
-                <th class="" scope="col">
-                   <div class="slds-truncate" title="Last Name">Last Name</div>
+                   <div class="slds-truncate" title="Name">Name</div>
                 </th>
                 <th class="" scope="col">
                    <div class="slds-truncate" title="Phone">Phone</div>
@@ -31,15 +21,11 @@
                 </th>
              </tr>
           </thead>
-          
           <tbody>   
-             <template for:each={contacts} for:item="con">
-                <tr class="slds-hint-parent" key={contact.Id}>
+             <template for:each={contactsRecord} for:item="con">
+                <tr class="slds-hint-parent" key={con.Id}>
                    <td>
-                      <div class="slds-truncate">{con.FirstName}</div>
-                   </td>
-                   <td>
-                      <div class="slds-truncate">{con.LastName}</div>
+                      <div class="slds-truncate">{con.Name}</div>
                    </td>
                    <td>
                       <div class="slds-truncate">
@@ -55,5 +41,11 @@
              </template>
           </tbody>
        </table>
+
+       <div class="exampleHolder">
+         <template if:true={loaded}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+         </template>
+     </div>
     </div>
  </template>

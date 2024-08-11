@@ -1,11 +1,11 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
     <div class="slds-m-around_medium " style="background-color:pink; bottom-margin:10pt;" >
         <b>Method 1: Using Notification Library To Showing Toast Notification</b><br/>
-         <lightning:notificationsLibrary aura:id="notifLib"/>
-    <lightning:button name="notice" label="Show Notice" onclick="{!c.handleShowNotice}"/>
-    <br/>
+        <lightning:notificationsLibrary aura:id="notifLib"/>
+        <lightning:button name="notice" label="Show Notice" onclick="{!c.handleShowNotice}"/>
+        <br/>
     </div>
-	
+    
     
     <div class="slds-m-around_small">
         <b>Method 2: Using .force:showToast To Showing Toast Notification</b> <br/>

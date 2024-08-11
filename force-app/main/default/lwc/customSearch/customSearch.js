@@ -1,32 +1,29 @@
 import { LightningElement,track} from 'lwc';
-// import server side apex class method 
-import getContactList from '@salesforce/apex/customSearchSobjectLWC.getContactList';
-// import standard toast event 
+import getContactList from '@salesforce/apex/UtilityClassDev.getContactList';
 import {ShowToastEvent} from 'lightning/platformShowToastEvent'
- 
 export default class customSearch extends LightningElement {
-    
     @track contactsRecord;
     searchValue = '';
- 
+    loaded = false;
     // update searchValue var when input field value change
     searchKeyword(event) {
         this.searchValue = event.target.value;
     }
- 
     // call apex method on button click 
     handleSearchKeyword() {
-        
+        debugger;
+        this.loaded = true;
         if (this.searchValue !== '') {
             getContactList({
                     searchKey: this.searchValue
                 })
                 .then(result => {
+                    debugger;
+                    this.loaded = false;
                     // set @track contacts variable with return contact list from server  
                     this.contactsRecord = result;
                 })
                 .catch(error => {
-                   
                     const event = new ShowToastEvent({
                         title: 'Error',
                         variant: 'error',
