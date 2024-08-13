@@ -1,25 +1,15 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-    <div class="slds-m-around_medium " style="background-color:pink; bottom-margin:10pt;" >
-        <b>Method 1: Using Notification Library To Showing Toast Notification</b><br/>
+    <div class="slds-m-around_medium " style="bottom-margin:10pt;" >
+        <b>Method 1: Using Notification Library To Showing Toast Notification</b><br/> <br/>
         <lightning:notificationsLibrary aura:id="notifLib"/>
-        <lightning:button name="notice" label="Show Notice" onclick="{!c.handleShowNotice}"/>
+        <lightning:button variant="brand" name="notice" label="Show Notice" onclick="{!c.handleShowNotice}"/>
         <br/>
     </div>
-    
-    
     <div class="slds-m-around_small">
-        <b>Method 2: Using .force:showToast To Showing Toast Notification</b> <br/>
-        <lightning:button label="Information"
-                          variant="brand"
-                          onclick="{!c.showInfo}"/>
-        <lightning:button label="Error"
-                          variant="destructive"
-                          onclick="{!c.showError}"/>
-        <lightning:button label="Warning"
-                          variant="neutral"
-                          onclick="{!c.showWarning}"/>
-        <lightning:button label="Success"
-                          variant="success"
-                          onclick="{!c.showSuccess}"/>
+        <b>Method 2: Using .force:showToast To Showing Toast Notification</b> <br/> <br/>
+        <lightning:button label="Information" variant="brand" onclick="{!c.showInfo}"/>
+        <lightning:button label="Error" variant="destructive" onclick="{!c.showError}"/>
+        <lightning:button label="Warning" variant="neutral" onclick="{!c.showWarning}"/>
+        <lightning:button label="Success" variant="success" onclick="{!c.showSuccess}"/>
     </div> 
 </aura:component>

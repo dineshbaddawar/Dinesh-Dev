@@ -2,15 +2,11 @@
     <lightning-card title="Opportunity Filter">
         <div class="slds-m-around_medium">
             <lightning-input label="Start Date" type="date" value={startDate} onchange={handleStartDateChange}></lightning-input>
-            <lightning-input label="End Date" type="date" value={endDate} onchange={handleEndDateChange}></lightning-input>
-            <lightning-button label="Get Opportunities" onclick={getOpportunities}></lightning-button>
+            <lightning-input label="End Date" type="date" value={endDate} onchange={handleEndDateChange}></lightning-input> <br/>
+            <lightning-button variant="brand" label="Get Opportunities" onclick={getOpportunities}></lightning-button>
         </div>
         <template if:true={opportunities.length}>
-            <lightning-datatable
-                key-field="Id"
-                data={opportunities}
-                columns={columns}>
-            </lightning-datatable>
+            <lightning-datatable key-field="Id" data={opportunities} columns={columns}> </lightning-datatable>
         </template>
         <template if:true={error}>
             <div class="slds-text-color_error">{error}</div>
