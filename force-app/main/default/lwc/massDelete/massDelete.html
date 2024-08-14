@@ -5,16 +5,18 @@
             &nbsp;Mass Delete Records
         </h3>
         <div slot="footer">
-            <lightning-button  label="Delete Selected Records" variant="brand" onclick={deleteSelRecords}>
+            <lightning-button  label="Delete Contact" variant="brand" onclick={deleteSelRecords}>
             </lightning-button>
-            <div>
-                    {message}
-            </div>
+            <div>{message}</div>
         </div>            
         <p class="slds-p-horizontal_small">            
-            <lightning-datatable data={contacts.data} columns={columns} key-field="id" onrowselection={prepareSelectedRows}>
-
-            </lightning-datatable>  
+            <!-- <lightning-datatable data={contacts.data} columns={columns} key-field="id" onrowselection={prepareSelectedRows}> </lightning-datatable> -->
+            <lightning-datatable 
+            data={contactList} 
+            columns={columns} 
+            key-field="Id" 
+            onrowselection={prepareSelectedRows}>
+        </lightning-datatable>   
         </p>   
     </lightning-card>
 </template>

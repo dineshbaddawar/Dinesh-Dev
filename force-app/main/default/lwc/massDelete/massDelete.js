@@ -1,19 +1,30 @@
-import { LightningElement,wire,track } from 'lwc';
- import getContactList from '@salesforce/apex/MassDeleteContacts.getContactList';
- import deleteSelectedContacts from '@salesforce/apex/MassDeleteContacts.deleteSelectedContacts';
+import { LightningElement,wire,track,api } from 'lwc';
+ import getContactList from '@salesforce/apex/UtilityClassDev.getContactListBulkDelete';
+ import deleteSelectedContacts from '@salesforce/apex/UtilityClassDev.deleteSelectedContacts';
  import { refreshApex } from '@salesforce/apex';
  import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class MassDelete extends LightningElement {
-    @wire(getContactList) contacts;
+    @api recordId;
     @track selectedContactIdList=[];
     @track message;
+    @track contactList ;
+    @track error;
     @track columns=[
-        {label:'FirstName',fieldName:'FirstName',type:'text'},
-        {label:'LastName', fieldName:'LastName',type:'text' }
+        {label:'Name',fieldName:'Name',type:'text'}
     ];
-   deleteSelRecords(){
 
+    @wire(getContactList,{ recordId: '$recordId' })
+    contacts({error,data}) {
+        debugger;
+        if (data) {
+            this.contactList = data;
+        } else if (error) {
+            this.error = error;
+        }
+    }
+
+   deleteSelRecords(){
     deleteSelectedContacts({selContactIdList:this.selectedContactIdList})
     .then(result => {               
         this.dispatchEvent( 
@@ -26,7 +37,7 @@ export default class MassDelete extends LightningElement {
           //for clearing selected row indexs 
         this.template.querySelector('lightning-datatable').selectedRows = [];
 
-        return refreshApex(this.contacts);        
+        return refreshApex(this.contactList);        
     })
     .catch(error => {
         this.message = undefined;
@@ -47,7 +58,6 @@ export default class MassDelete extends LightningElement {
     for (let i = 0; i < selectedRows.length; i++){           
         this.selectedContactIdList.push(selectedRows[i].Id);
     }  
-    console.log(this.selectedContactIdList);   
-
+    console.log('Selected Contact List == >'+this.selectedContactIdList);   
    }
 }
